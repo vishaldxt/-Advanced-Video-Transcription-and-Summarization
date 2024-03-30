@@ -13,7 +13,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 import os
 from dotenv import load_dotenv
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "*********************************"
 
 load_dotenv()
 
@@ -33,7 +33,7 @@ model.enableExternalScorer(scorer_file_path)
 
 # Initialize LangChain components
 embeddings = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
-llm = ChatOpenAI(openai_api_key="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")
+llm = ChatOpenAI(openai_api_key="******************************")
 
 
 @app.on_event("startup")
